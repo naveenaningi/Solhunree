@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LOcSuite]">
+  <test name="tetTest(failed)">
+    <groups>
+      <run>
+        <exclude name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestngDemo.testNg4">
+        <methods>
+          <include name="tc_2"/>
+          <include name="tc_1"/>
+          <include name="tc_3"/>
+        </methods>
+      </class> <!-- TestngDemo.testNg4 -->
+    </classes>
+  </test> <!-- tetTest(failed) -->
+</suite> <!-- Failed suite [LOcSuite] -->
