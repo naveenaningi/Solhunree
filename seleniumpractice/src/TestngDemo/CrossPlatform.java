@@ -14,14 +14,13 @@ import org.testng.annotations.Test;
 import com.beust.jcommander.Parameter;
 
 public class CrossPlatform {
-	
-	@Parameters({"node","browser"})
 	@Test
+	@Parameters({"node","browser"})
 	public void runMultipleOs(String node,String broswer) throws MalformedURLException, InterruptedException {
-		URL whichSystem  = new URL(node);
-		DesiredCapabilities dc = new DesiredCapabilities ();
+		URL wc = new URL(node);
+		DesiredCapabilities dc = new DesiredCapabilities();
 		dc.setBrowserName(broswer);
-		WebDriver driver = new RemoteWebDriver(whichSystem,dc);
+		WebDriver driver = new RemoteWebDriver(wc,dc);
 		driver.get("https://demo.actitime.com/login.do");
 		WebElement usntf= driver.findElement(By.id("username"));
 	    for(int i =1;i<=1;i++) {

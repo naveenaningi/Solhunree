@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="TestngDemo.cROSS">
+      <class name="Listenrs.demo.TestCases">
         <methods>
-          <include name="runMethod"/>
+          <include name="singup"/>
         </methods>
-      </class> <!-- TestngDemo.cROSS -->
+      </class> <!-- Listenrs.demo.TestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -18,8 +18,8 @@ public class Windowpopup {
 		r.keyPress(KeyEvent.VK_P);
 		r.keyRelease(KeyEvent.VK_P);
 		r.keyRelease(KeyEvent.VK_CONTROL);
-	Thread.sleep(3000);
-	Runtime.getRuntime().exec("C:\\Users\\pavan\\Documents\\naveen_x64.exe");
+	    Thread.sleep(3000);
+	    Runtime.getRuntime().exec("C:\\Users\\pavan\\Documents\\naveen_x64.exe");
 	}
 
 }

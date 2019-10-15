@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <parameter name="node" value="http://localhost:4444/wd/hub/"/>
-  <parameter name="browser" value="chrome"/>
-  <test name=" chromeTest(failed)" parallel="tests">
-    <parameter name="node" value="http://localhost:4444/wd/hub/"/>
-    <parameter name="browser" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="TestngDemo.CrossPlatform">
+      <class name="Listenrs.demo.TestCases">
         <methods>
-          <include name="runMultipleOs" invocation-numbers="0"/>
+          <include name="singup"/>
         </methods>
-      </class> <!-- TestngDemo.CrossPlatform -->
+      </class> <!-- Listenrs.demo.TestCases -->
     </classes>
-  </test> <!--  chromeTest(failed) -->
-  <test name=" firefoxTest(failed)" parallel="tests">
-    <parameter name="node" value="http://localhost:4444/wd/hub/"/>
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="TestngDemo.CrossPlatform">
-        <methods>
-          <include name="runMultipleOs" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- TestngDemo.CrossPlatform -->
-    </classes>
-  </test> <!--  firefoxTest(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

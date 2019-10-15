@@ -7,12 +7,21 @@
 <classes> 
 <class name="TestngDemo.CrossPlatform"></class>
 </classes>
-  </test> <!-- Test -->
-  <test name=" chromeTest">
-  <parameter name="node" value="http://localhost:4444/wd/hub/"></parameter>
- <parameter name="browser" value="chrome"></parameter>
+  </test> 
+  
+<test name=" chromeTest">
+<parameter name="node" value="http://localhost:4444/wd/hub/"></parameter>
+<parameter name="browser" value="chrome"></parameter>
 <classes> 
 <class name="TestngDemo.CrossPlatform"></class>
 </classes>
-</test> <!-- Test -->
-</suite> <!-- Suite -->
+</test> 
+ 
+<test name="internetexplorertest">
+<parameter name="node" value="http://localhost:4444/wd/hub"></parameter><!-- Test -->
+<parameter name="browser" value="IEDriverServer"></parameter>
+<classes>
+<class name="TestngDemo.CrossPlatform"></class>
+</classes>
+</test>
+</suite>

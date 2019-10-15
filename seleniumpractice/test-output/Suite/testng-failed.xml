@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <parameter name="node" value="http://localhost:4444/wd/hub/"/>
-  <parameter name="browser" value="chrome"/>
-  <test name=" chromeTest(failed)" parallel="tests">
-    <parameter name="node" value="http://localhost:4444/wd/hub/"/>
-    <parameter name="browser" value="chrome"/>
+  <parameter name="node" value="http://localhost:4444/wd/hub"/>
+  <parameter name="browser" value="IEDriverServer"/>
+  <test name="internetexplorertest(failed)" parallel="tests">
+    <parameter name="node" value="http://localhost:4444/wd/hub"/>
+    <parameter name="browser" value="IEDriverServer"/>
     <classes>
       <class name="TestngDemo.CrossPlatform">
         <methods>
@@ -13,16 +13,5 @@
         </methods>
       </class> <!-- TestngDemo.CrossPlatform -->
     </classes>
-  </test> <!--  chromeTest(failed) -->
-  <test name=" firefoxTest(failed)" parallel="tests">
-    <parameter name="node" value="http://localhost:4444/wd/hub/"/>
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="TestngDemo.CrossPlatform">
-        <methods>
-          <include name="runMultipleOs" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- TestngDemo.CrossPlatform -->
-    </classes>
-  </test> <!--  firefoxTest(failed) -->
+  </test> <!-- internetexplorertest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
